@@ -1,0 +1,245 @@
+$primary-color: #2b2f78;
+
+*{
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+aside{
+	position: fixed;
+	transition: .3s;
+	background-color: $primary-color;
+	width: 200px;
+	height: 100vh;
+	.header-sidebar .title{
+		margin: 15px 0;
+		color: #eee;
+		h2{
+			font-size: 1.7em;
+		}
+		h4{
+			font-size: 1.2em;
+		}
+	}
+
+	.nav-link{
+		color: #eee;
+		transition: .3s;
+		&:hover{
+			padding-left: 20px;
+			color: white;
+			background-color: darken($primary-color, 10%);
+		}
+		.fa{
+			font-size: .8em;
+		}
+	}
+
+	.nav-link.active{
+		color: $primary-color;
+		background-color: white;
+		border-radius: 10px 0 0 10px;
+		font-weight: 700;
+		margin: 5px 0 5px 8px;
+	}
+	.sub-menu{
+		background-color: lighten($primary-color, 15%);
+		.sub-menu-link:hover{
+			background-color: lighten($primary-color, 10%);
+		}
+	}
+
+
+}
+
+main{
+	left: 200px;
+	top: 0;
+	position: absolute;
+	transition: .2s;
+	nav{
+		transition : .2s;
+		display: flex;
+		justify-content: space-between;
+		width: calc(100vw - 200px);
+		right: 0;
+		background-color: white;
+
+		#navbar-toggler{
+			cursor: pointer;
+			padding: 7px 10px;
+			background-color: lighten($primary-color, 60%);
+			border-radius: 50%;
+
+		}
+		.dropdown{
+			padding: 4px 10px;
+			border-radius: 4px;
+			background-color: lighten($primary-color, 60%);
+
+			.dropdown-menu{
+				margin-left: -60px;
+			}
+		}
+	}
+
+	#cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+		grid-gap: 10px;
+		.card{
+			color: white;
+			border: none;
+			background: linear-gradient(to right bottom, lighten($primary-color,30%) 10%, $primary-color);
+			height: 100px;
+		}
+	}
+
+}
+
+.main-full{
+	left: 0;
+}
+
+.main-full nav.navbar{
+	width: 100vw!important;
+}
+
+.sidebar-hide{
+	transform: translateX(-200px);
+}
+
+
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	z-index: 9999;
+	transition: all .4s;
+	.spinner-container{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.spinner-border{
+		color: $primary-color;
+	}
+}
+
+table{
+	margin: 10px 0;
+	
+	color: $primary-color;
+
+	tr{
+
+		padding: 4px 8px;
+		&:nth-child(even){
+			background-color: lighten($primary-color, 60%);
+		}
+	}
+	thead{
+		background-color: $primary-color;
+		color: white;
+	}
+}
+
+.btn-primary{
+	background-color: $primary-color;
+	border: none;
+	&:focus{
+		box-shadow: unset;
+	}
+	&:visited{
+		background-color: $primary-color;
+	}
+	&:hover{
+		background-color: lighten($primary-color, 10%);
+	}
+}
+
+.btn-danger{
+	background-color: #f44336;
+	padding: 3px 6px;
+	border: none!important;
+}
+.btn-success{
+	background-color: #4caf50;
+	padding: 3px 6px;
+	border: none!important;
+}
+.btn-secondary{
+	background-color: lighten($primary-color, 60%)!important;
+	color: $primary-color;
+	border: none;
+
+	&:focus{
+		box-shadow: unset;
+	}
+	&:visited{
+		background-color: lighten($primary-color, 60%)!important;
+	}
+	&:hover{
+		background-color: lighten($primary-color, 10%);
+		color: $primary-color;
+	}
+}
+
+.form-control,.form-select{
+	background-color: lighten($primary-color, 65%);
+	border:1px solid $primary-color;
+	&:focus{
+		box-shadow: 0 0 0 5px lighten($primary-color, 60%)!important;
+		border:1px solid $primary-color;
+	}
+}
+
+#payment{
+	.moths{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-gap: 10px;
+		.month{
+			padding: 10px;
+			border-radius: 4px;
+			border: 1px solid $primary-color;
+			height: 50px!important;
+			cursor: pointer;
+			transition: .2s;
+			&:hover{
+				background-color: lighten($primary-color, 50%);
+			}
+		}
+		input[type=radio]{
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+}
+.selected{
+	background-color: lighten($primary-color, 20%);
+	color: white;
+	&:hover{
+		background-color: lighten($primary-color, 21%)!important;
+	}
+}
+.nav-primary{
+	background-color: $primary-color; 
+}
+
+.payment-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr) );
+	align-items: center;
+	grid-gap: 15px;
+	.card-header{
+		background-color: $primary-color;
+		color: white;
+	}
+}

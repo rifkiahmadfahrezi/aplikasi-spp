@@ -1,0 +1,234 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+aside {
+  position: fixed;
+  transition: 0.3s;
+  background-color: #2b2f78;
+  width: 200px;
+  height: 100vh;
+}
+aside .header-sidebar .title {
+  margin: 15px 0;
+  color: #eee;
+}
+aside .header-sidebar .title h2 {
+  font-size: 1.7em;
+}
+aside .header-sidebar .title h4 {
+  font-size: 1.2em;
+}
+aside .nav-link {
+  color: #eee;
+  transition: 0.3s;
+}
+aside .nav-link:hover {
+  padding-left: 20px;
+  color: white;
+  background-color: #1e2052;
+}
+aside .nav-link .fa {
+  font-size: 0.8em;
+}
+aside .nav-link.active {
+  color: #2b2f78;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+  font-weight: 700;
+  margin: 5px 0 5px 8px;
+}
+aside .sub-menu {
+  background-color: #3f45b0;
+}
+aside .sub-menu .sub-menu-link:hover {
+  background-color: #383e9e;
+}
+
+main {
+  left: 200px;
+  top: 0;
+  position: absolute;
+  transition: 0.2s;
+}
+main nav {
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 200px);
+  right: 0;
+  background-color: white;
+}
+main nav #navbar-toggler {
+  cursor: pointer;
+  padding: 7px 10px;
+  background-color: #e1e2f4;
+  border-radius: 50%;
+}
+main nav .dropdown {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #e1e2f4;
+}
+main nav .dropdown .dropdown-menu {
+  margin-left: -60px;
+}
+main #cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+main #cards .card {
+  color: white;
+  border: none;
+  background: linear-gradient(to right bottom, #7075cc 10%, #2b2f78);
+  height: 100px;
+}
+
+.main-full {
+  left: 0;
+}
+
+.main-full nav.navbar {
+  width: 100vw !important;
+}
+
+.sidebar-hide {
+  transform: translateX(-200px);
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 9999;
+  transition: all 0.4s;
+}
+.preloader .spinner-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.preloader .spinner-border {
+  color: #2b2f78;
+}
+
+table {
+  margin: 10px 0;
+  color: #2b2f78;
+}
+table tr {
+  padding: 4px 8px;
+}
+table tr:nth-child(even) {
+  background-color: #e1e2f4;
+}
+table thead {
+  background-color: #2b2f78;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #2b2f78;
+  border: none;
+}
+.btn-primary:focus {
+  box-shadow: unset;
+}
+.btn-primary:visited {
+  background-color: #2b2f78;
+}
+.btn-primary:hover {
+  background-color: #383e9e;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  padding: 3px 6px;
+  border: none !important;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  padding: 3px 6px;
+  border: none !important;
+}
+
+.btn-secondary {
+  background-color: #e1e2f4 !important;
+  color: #2b2f78;
+  border: none;
+}
+.btn-secondary:focus {
+  box-shadow: unset;
+}
+.btn-secondary:visited {
+  background-color: #e1e2f4 !important;
+}
+.btn-secondary:hover {
+  background-color: #383e9e;
+  color: #2b2f78;
+}
+
+.form-control, .form-select {
+  background-color: #f4f4fb;
+  border: 1px solid #2b2f78;
+}
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 5px #e1e2f4 !important;
+  border: 1px solid #2b2f78;
+}
+
+#payment .moths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+#payment .moths .month {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #2b2f78;
+  height: 50px !important;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#payment .moths .month:hover {
+  background-color: #bbbee7;
+}
+#payment .moths input[type=radio] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.selected {
+  background-color: #4b51be;
+  color: white;
+}
+.selected:hover {
+  background-color: #4e54c0 !important;
+}
+
+.nav-primary {
+  background-color: #2b2f78;
+}
+
+.payment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  grid-gap: 15px;
+}
+.payment-cards .card-header {
+  background-color: #2b2f78;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
