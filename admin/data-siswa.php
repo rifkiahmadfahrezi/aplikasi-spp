@@ -170,7 +170,7 @@ if ($officerData['level'] == 'petugas') {
                   <td><?= $student->isEmpty($row['alamat']) ?></td>
                   <td><?= $student->isEmpty($row['no_telp']) ?></td>
                   <td>
-                    <a title="hapus" class="btn btn-danger" href="hapus-siswa.php?nisn=<?= $row['nisn'] ?>"><i class="fa fa-trash"></i></a>
+                    <a title="hapus" id="delete-btn" class="btn btn-danger" href="hapus-siswa.php?nisn=<?= $row['nisn'] ?>"><i class="fa fa-trash"></i></a>
                     <a title="Ubah" class="btn btn-success" href="update-siswa.php?nisn=<?= $row['nisn'] ?>"><i class="fa fa-pencil-alt"></i></a>
                   </td>
                 </tr>

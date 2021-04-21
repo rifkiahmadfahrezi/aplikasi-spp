@@ -162,7 +162,7 @@ if ($officerData['level'] == 'petugas') {
                     <td><?= $row['level'] ?></td>
                     <td>
                       <?php if ($row['username'] != $officerData['username'] ): ?>
-                        <a title="Hapus" class="btn btn-danger" href="hapus-petugas.php?id=<?= $row['id_petugas'] ?>"><i class="fa fa-trash"></i></a>
+                        <a id="delete-btn" title="Hapus" class="btn btn-danger" href="hapus-petugas.php?id=<?= $row['id_petugas'] ?>"><i class="fa fa-trash"></i></a>
                       <?php endif ?>
                       <a title="Edit" class="btn btn-success" href="update-petugas.php?id=<?= $row['id_petugas'] ?>"><i class="fa fa-pencil-alt"></i></a>
                     </td>

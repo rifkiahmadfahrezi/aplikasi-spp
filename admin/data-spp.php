@@ -167,7 +167,7 @@ if ($officerData['level'] == 'petugas') {
                 <td><?= $row['tahun'] ?></td>
                 <td>Rp. <?= number_format($row['nominal'] , 0, ',', '.'); ?></td>
                 <td>
-          <a title="Hapus" href="hapus-spp.php?id=<?= $row['id_spp'] ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+          <a id="delete-btn" title="Hapus" href="hapus-spp.php?id=<?= $row['id_spp'] ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
         
           <a title="Ubah" href="update-spp.php?id=<?= $row['id_spp'] ?>" class="btn btn-success"><i class="fa fa-pencil-alt"></i></a>
                 </td>

@@ -118,7 +118,17 @@ $kelas = $conn->query("SELECT * FROM KELAS");
                   })
                 </script>";
             unset($_SESSION['status']);
-        }
+        }if ($_SESSION['status'] == 'ditambah') {
+            echo "<script>
+                Swal.fire({
+                  title: 'Berhasil',
+                  text: 'Data kelas berhasil ditambah',
+                  icon: 'success',
+                  confirmButtonColor :'#2b2f78'
+                  })
+                </script>";
+            unset($_SESSION['status']);
+          }
       }
      ?>
      <?php 
@@ -173,7 +183,7 @@ $kelas = $conn->query("SELECT * FROM KELAS");
               <td><?= $dataKelas['kompetensi_keahlian'] ?></td>
               <td><?= $getJmlSiswa->fetch_assoc()['jml_siswa'] ?></td>
               <td>
-                <a href="hapus-kelas?id=<?= $dataKelas['id_kelas'] ?>" title="Hapus" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                <a id="delete-btn" href="hapus-kelas?id=<?= $dataKelas['id_kelas'] ?>" title="Hapus" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                 <a href="update-kelas.php?id=<?= $dataKelas['id_kelas'] ?>" title="Update" class="btn btn-success me-2"><i class="fa fa-pencil-alt"></i></a>
               </td>
             </tr>
