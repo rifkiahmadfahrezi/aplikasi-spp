@@ -1,7 +1,7 @@
 <h1>Aplikasi pembayaran SPP</h1>
  
-Demo<br>
-http://aplikasi-spp.infinityfreeapp.com/
+<b>Demo</b><br>
+http://aplikasi-spp.infinityfreeapp.com/ <br>
 (tampilan terbaik di laptop/desktop)
  
 <h2>Fitur utama</h2>
