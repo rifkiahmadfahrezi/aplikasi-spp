@@ -175,7 +175,7 @@ $daftarTahunSpp = $conn->query("SELECT tahun FROM spp");
       </select>
 
       <label for="harga">Harga SPP perbulan</label>
-      <input type="number" id="harga" required class="form-control mb-3 mt-1">
+      <input type="number" id="harga" readonly required class="form-control mb-3 mt-1">
 
       <div class="input-wrapper">
         <label for="nisn">NISN</label>
@@ -253,7 +253,7 @@ $daftarTahunSpp = $conn->query("SELECT tahun FROM spp");
 
 
       <label for="total">Total Pembayaran</label>
-      <input type="number" name="total" id="total" value="0" class="form-control mb-3 mt-1">
+      <input type="number" readonly name="total" id="total" value="0" class="form-control mb-3 mt-1">
 
       <button type="submit" name="submit-payment" class="btn konfirmasi btn-primary">Submit</button>
 
