@@ -2,6 +2,7 @@
  
 Demo<br>
 http://aplikasi-spp.infinityfreeapp.com/
+(tampilan terbaik di laptop/desktop)
  
 <h2>Fitur utama</h2>
 1. CRUD Data Siswa <br>
