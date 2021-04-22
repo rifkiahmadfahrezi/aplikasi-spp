@@ -1,6 +1,13 @@
 <h1>Aplikasi pembayaran SPP</h1>
  
-<b>Demo</b><br>
+<b>Demo</b><br><br>
+Login sebagai admin:<br>
+username: admin<br>
+password: admin<br><br>
+Login sebagai petugas:<br>
+username: petugas<br>
+password: petugas123<br><br>
+
 http://aplikasi-spp.infinityfreeapp.com/ <br>
 (tampilan terbaik di laptop/desktop)
  
