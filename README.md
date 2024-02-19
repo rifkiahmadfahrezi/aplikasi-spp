@@ -8,7 +8,7 @@ Login sebagai petugas:<br>
 username: petugas<br>
 password: petugas123<br><br>
 
-http://aplikasi-spp.infinityfreeapp.com/ <br>
+https://spp-app-rifki.000webhostapp.com/ <br>
 (tampilan terbaik di laptop/desktop)
  
 <h2>Fitur utama</h2>
